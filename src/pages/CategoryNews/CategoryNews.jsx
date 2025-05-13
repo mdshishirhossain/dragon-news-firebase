@@ -2,7 +2,7 @@ import React, { use, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import NewsCard from '../../components/NewsCard/NewsCard';
 
-const categoriesPromise = fetch("categories.json").then(res => res.json())
+const categoriesPromise = fetch("/categories.json").then(res => res.json())
 
 const CategoryNews = () => {
     const categories = use(categoriesPromise)
